@@ -19,7 +19,7 @@ Before running the script, ensure you have the following installed:
 2.  **TFTP Server:** A running TFTP server on the machine executing the script (or at the IP retrieved by `get_int_ip`).
 3.  **Required Python Libraries:**
     ```bash
-    pip install psutil paramiko
+    pip install -r requirements.txt
     ```
 
 ## 🚀 Usage
@@ -39,3 +39,4 @@ In the `if __name__ == "__main__":` block, update the switch array for your site
     VirtualComp_switches = ["192.168.20.1", "192.168.20.2", "...", "...."]
     # Pass your site name and the array to the backup function
     backup_site_switches("VirtualComp", VirtualComp_switches, tftp_server)
+
